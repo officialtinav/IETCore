@@ -1,0 +1,56 @@
+<html>
+<head>
+  <style>
+    @-webkit-keyframes fadeOut {
+      100% {
+        opacity:0;
+      }
+    }
+    @-webkit-keyframes fadeIn {
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    #stars {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(nightsky.jpg);
+      background-size: cover;
+      animation-name: fadeIn;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      opacity: 0;
+      position: absolute;
+    }
+    
+    #sun {
+      width: 100vw;
+      height: 100vh;
+      background-image: url(sunrise.png);
+      background-size: cover;
+      animation-name: fadeOut;
+      transform: translate(0,0);
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      opacity: 1;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="stars">
+    
+  </div>
+  <div id="sun">
+   
+  </div>
+  
+</body>
+</html>
