@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+  @-webkit-keyframes slideOut {
+    100% {
+      transform: translateX(30vw);
+    }
+  }
+  #letter {
+    width: 100vw;
+    height: 100vh;
+    font-size: 100vh;
+    position: absolute;
+    
+  }
+    
+    #apple {
+    width: 100vw;
+    height: 100vh;
+    font-size: 100vh;
+    background-image: url("http://thefishbowlnetwork.com/blog/wp-content/uploads/2014/01/apple.jpg");
+    background-size: cover;
+    transform: translate(0,0);
+   
+    }
+    
+    #apple:active {
+      animation-name: slideOut;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    
+    </style>
+    
+    
+    
+    
+  </head>
+  <body>
+    
+    <div id="letter">A</div>
+    <div id="apple"></div>
+    
+    
+  </body>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</html>
