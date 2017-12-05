@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <style>
+    
+    @-webkit-keyframes redBox {
+      100% {
+        transform: translate(45vw,45vh);
+      }
+      80% {
+        transform: translate(5vw,5vh);
+      }
+    
+
+    }
+    
+      @-webkit-keyframes greenBox {
+      100% {
+        transform: translate(90vw,0vh);
+      }
+    }
+    
+    @-webkit-keyframes blackBox {
+      100% {
+        transform: translate(-90vw,0vh);
+      }
+    }
+      
+       #red {
+         width:5vw;
+         height:10vh;
+         background-color: red;
+         transform: translate(45vw,45vh);
+         animation-name: redBox;
+         animation-duration: 2s;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+     }
+      
+      #green {
+         width:5vw;
+         height:10vh;
+         background-color: green;
+         float: left;
+         animation-name: greenBox;
+          animation-duration: 2s;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+      }
+      
+      #black {
+         width:5vw;
+         height:10vh;
+         background-color: black;
+         float: right;
+         animation-name: blackBox;
+          animation-duration: 2s;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+      }
+      
+      
+    </style>
+    </head>
+    <body>
+      <div id="red"></div>
+      <div id="green"></div>
+      <div id="black"></div>
+
+    </body>
+
+</html>
